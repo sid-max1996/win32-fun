@@ -1,9 +1,9 @@
 # Win32 Fun
 
 ## Usage
-retrieving disk memory information,
+disk memory information,
 put the monitor into sleep mode,
-wake up the monitor.
+wake up the monitor, set volume
 
 ```javascript
   const win32Fun = require('win32-fun');
@@ -14,4 +14,6 @@ wake up the monitor.
   win32Fun.turnOffMonitor();
   // wake up the monitor
   win32Fun.turnOnMonitor();
+  // set volume
+  win32Fun.setVolume(30); // 0 - 100
 ```

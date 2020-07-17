@@ -1,7 +1,7 @@
 {
   "name": "win32-fun",
-  "version": "1.0.0",
-  "description": "win32 functions",
+  "version": "1.0.1",
+  "description": "disk memory information, put the monitor into sleep mode, wake up the monitor, set volume",
   "repository": "https://github.com/sid-max1996/win32-fun",
   "main": "index.js",
   "gypfile": true,

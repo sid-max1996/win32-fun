@@ -31,3 +31,4 @@ exports.getDiskSpace = function(path, callback) {
 exports.getDiskSpaceSync = native.getDiskUsage;
 exports.turnOffMonitor = native.screenSleep;
 exports.turnOnMonitor = native.screenWakeUp;
+exports.setVolume = native.setVolume;
