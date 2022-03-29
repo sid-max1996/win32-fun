@@ -46,6 +46,13 @@ Napi::Value win32_fun::screenWakeUp(const Napi::CallbackInfo& info)
   return env.Null();
 }
 
+Napi::Value win32_fun::preventLockScreen(const Napi::CallbackInfo& info) 
+{
+  Napi::Env env = info.Env();
+  PreventLockScreen();
+  return env.Null();
+}
+
 Napi::Value win32_fun::setVolume(const Napi::CallbackInfo& info) 
 {
   Napi::Env env = info.Env();
@@ -70,6 +77,7 @@ Napi::Object win32_fun::Init(Napi::Env env, Napi::Object exports)
   exports.Set("getDiskUsage", Napi::Function::New(env, win32_fun::getDiskUsage));
   exports.Set("screenSleep", Napi::Function::New(env, win32_fun::screenSleep));
   exports.Set("screenWakeUp", Napi::Function::New(env, win32_fun::screenWakeUp));
+  exports.Set("preventLockScreen", Napi::Function::New(env, win32_fun::preventLockScreen));
   exports.Set("setVolume", Napi::Function::New(env, win32_fun::setVolume));
   return exports;
 }

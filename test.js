@@ -1,17 +1,39 @@
 const win32Fun = require('./index')
 
-// async function start() {
+/******* Test check space ********/
+
+// async function checkSpace() {
 //   const { free, total, available } = await win32Fun.getDiskSpace('c:')
 //   console.log('free', free, 'total', total, 'available', available)
 // }
 
-// start()
+// checkSpace()
 
-// win32Fun.turnOffMonitor()
+/******* Test screen sleep ********/
 
-// setTimeout(() => {
+// let running = true
+
+// async function screenWakeUpAfter(timeout) {
+//   setTimeout(() => {
+//     running = false
+//   }, timeout)
+// }
+
+// async function screenSleep() {
+//   while (running) {
+//     console.log('turn off monitor')
+//     win32Fun.turnOffMonitor()
+//     win32Fun.preventLockScreen()
+//     await (new Promise(resolve => setTimeout(() => resolve(), 5000)))
+//   }
+//   console.log('turn on monitor')
 //   win32Fun.turnOnMonitor()
-// }, 5000)
+// }
+
+// screenSleep()
+// screenWakeUpAfter(30000)
+
+/******* Test set volume ********/
 
 // win32Fun.setVolume(30)
 
