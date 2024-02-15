@@ -1,2 +1,4 @@
 v1.1.1
   fix: turnOffMonitor works only few seconds
+v1.1.2
+  feat: improve PreventLockScreen
