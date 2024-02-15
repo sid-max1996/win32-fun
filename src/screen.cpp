@@ -2,6 +2,7 @@
 #include <Windows.h>
 
 void ScreenSleep() {
+  // HWND_BROADCAST intead GetConsoleWindow() works too
   SendMessage(GetConsoleWindow(), WM_SYSCOMMAND, SC_MONITORPOWER, (LPARAM)2);
 }
 
