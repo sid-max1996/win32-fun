@@ -2,7 +2,7 @@
 #include <Windows.h>
 
 void ScreenSleep() {
-  SendMessage(HWND_BROADCAST, WM_SYSCOMMAND, SC_MONITORPOWER, (LPARAM)2);
+  SendMessage(GetConsoleWindow(), WM_SYSCOMMAND, SC_MONITORPOWER, (LPARAM)2);
 }
 
 void ScreenWakeUp () {

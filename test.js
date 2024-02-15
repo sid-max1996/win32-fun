@@ -1,4 +1,4 @@
-const win32Fun = require('./index')
+const win32Fun = require("./index");
 
 /******* Test check space ********/
 
@@ -37,3 +37,4 @@ const win32Fun = require('./index')
 
 // win32Fun.setVolume(30)
 
+// win32Fun.turnOffMonitor();
